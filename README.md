@@ -60,9 +60,9 @@ Permite recorrer todos los participantes sin exponer directamente la estructura 
 
 ---
 
-## ⚙️ Instrucciones de Compilación y Ejecución
+### 5 Instrucciones de Compilación y Ejecución
 
-### 📁 Estructura del proyecto
+### 6 Estructura del proyecto
 
 /NotiEventos
 │
@@ -76,7 +76,7 @@ Permite recorrer todos los participantes sin exponer directamente la estructura 
 │
 ├── README.md
 
-### 🛠️ Compilar
+###  Compilar
 
 Ubicado dentro del directorio raíz del proyecto:
 
@@ -85,7 +85,9 @@ javac -d out src/**/*.java
 
 EJECUTAR
 java -cp out notieventos.Notieventos
+````
 
+````
 EJEMPLO DE USO
 --- Menú NotiEventos ---
 1. Agregar participante nuevo
@@ -98,10 +100,10 @@ Nombre: Juan Pérez
 RUT: 12.345.678-9
 Rol: Expositor
 [Notificación] Nuevo participante agregado: Juan Pérez
+````
 
 
-
-POSIBLES MEJOREAS FUTURAS
+### POSIBLES MEJORAS FUTURAS
 Agregar nuevos formatos de impresión (Bridge).
 
 Persistencia de datos con archivos o base de datos.
@@ -110,5 +112,7 @@ Autenticación de usuarios para registrar participantes.
 
 Exportar credenciales en PDF o imprimirlas con QR.
 
-Justificación General
-Este proyecto demuestra la aplicación práctica de patrones GoF en un sistema funcional, enfocado en modularidad, reutilización y bajo acoplamiento. Cada patrón cumple un propósito real dentro del flujo de interacción del usuario, permitiendo escalar o modificar el sistema sin romper su estructura base.
+### Justificación General
+Este proyecto demuestra la aplicación práctica de patrones GoF en un sistema funcional, enfocado en modularidad,
+reutilización y bajo acoplamiento. Cada patrón cumple un propósito real dentro del flujo de interacción del usuario,
+ permitiendo escalar o modificar el sistema sin romper su estructura base.
