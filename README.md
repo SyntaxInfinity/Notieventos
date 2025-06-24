@@ -1,4 +1,4 @@
-# 🪪 NotiEventos – Sistema de Gestión de Participantes
+#  NotiEventos – Sistema de Gestión de Participantes
 
 **Autor:** Alex Ponce  
 **Asignatura:** Patrones de Diseño  
