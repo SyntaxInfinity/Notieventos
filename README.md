@@ -63,7 +63,6 @@ Permite recorrer todos los participantes sin exponer directamente la estructura 
 ### Estructura del proyecto
 
 /NotiEventos
-│
 ├── /src
 │ ├── adapter/
 │ ├── bridge/
@@ -71,8 +70,6 @@ Permite recorrer todos los participantes sin exponer directamente la estructura 
 │ ├── model/
 │ ├── observer/
 │ └── notieventos/ ← contiene el archivo principal Notieventos.java
-│
-├── README.md
 
 ###  Compilar
 
