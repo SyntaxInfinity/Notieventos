@@ -3,8 +3,6 @@
 **Autor:** Alex Ponce  
 **Asignatura:** Patrones de Diseño  
 **Profesor:** Giovanni Caceres  
-**Evaluación Unidad 3 – Proyecto Individual**  
-**Total puntos: 70**
 
 ---
 
