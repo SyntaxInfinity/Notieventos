@@ -8,7 +8,7 @@
 
 ---
 
-## 🎯 Descripción General
+## Descripción General
 
 **NotiEventos** es un sistema en consola desarrollado en Java estándar, que permite gestionar participantes de un evento. Su funcionalidad incluye:
 
@@ -22,7 +22,7 @@ Este proyecto integra **cuatro patrones de diseño GoF** de forma práctica y ju
 
 ---
 
-## 🧩 Patrones de Diseño Aplicados
+##  Patrones de Diseño Aplicados
 
 ### 1. **Adapter** (Estructural)
 
@@ -60,9 +60,9 @@ Permite recorrer todos los participantes sin exponer directamente la estructura 
 
 ---
 
-### 5 Instrucciones de Compilación y Ejecución
+## Instrucciones de Compilación y Ejecución
 
-### 6 Estructura del proyecto
+### Estructura del proyecto
 
 /NotiEventos
 │
