@@ -11,6 +11,6 @@ package adapter;
 public class SistemaAntiguo {
 
     public String getNombreAntiguo() {
-        return "Participante del sistema legado";
+        return "Credencial temporal desde el sistema legado";
     }
 }

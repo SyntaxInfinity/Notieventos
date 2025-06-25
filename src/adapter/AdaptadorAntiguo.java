@@ -13,6 +13,6 @@ import model.Participante;
 public class AdaptadorAntiguo extends Participante {
 
     public AdaptadorAntiguo(SistemaAntiguo antiguo) {
-        super(antiguo.getNombreAntiguo(), "00000000-0", "Invitado");
+        super(antiguo.getNombreAntiguo(), "-", "Invitado");
     }
 }

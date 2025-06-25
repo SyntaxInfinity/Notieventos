@@ -20,5 +20,8 @@ public class Impresora {
 
     public void imprimirCredencial(Participante p) {
         formato.imprimir(p.getDatos());
+        if (p.getRol().equalsIgnoreCase("Invitado")) {
+            System.out.println("[INVITADO - ACCESO LIMITADO]");
+        }
     }
 }

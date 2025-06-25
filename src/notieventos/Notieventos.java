@@ -19,35 +19,54 @@ import observer.NotificadorCorreo;
  *
  * @author PC
  */
-
 public class Notieventos {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Patrones iniciales
         ParticipanteCollection lista = new ParticipanteCollection();   // Iterator
-        observer.NotificadorCorreo notificadorCorreo = new NotificadorCorreo();                      // Observer
+        NotificadorCorreo notificadorCorreo = new NotificadorCorreo(); // Observer
+
+        // Formato fijo: Simple
         Formato formato = new FormatoSimple();                         // Bridge
         Impresora impresora = new Impresora(formato);                  // Bridge
 
         int opcion;
-
         do {
             System.out.println("\n--- Menu NotiEventos ---");
             System.out.println("1. Agregar participante nuevo");
             System.out.println("2. Mostrar todos los participantes");
-            System.out.println("3. Agregar desde sistema antiguo (Adapter)");
+            System.out.println("3. Agregar desde sistema antiguo");
             System.out.println("0. Salir");
             System.out.print("Escoja una opcion: ");
-            opcion = sc.nextInt(); sc.nextLine();
+            opcion = sc.nextInt();
+            sc.nextLine();
 
             switch (opcion) {
                 case 1 -> {
                     System.out.print("Nombre: ");
                     String nombre = sc.nextLine();
-                    System.out.print("RUT: ");
-                    String rut = sc.nextLine();
+                    String rut;
+                    boolean valido;
+
+                    do {
+                        System.out.print("RUT (con digito verificador): ");
+                        rut = sc.nextLine();
+                        valido = true;
+
+                        if (rut.length() != 9 && rut.length() != 10) {
+                            System.out.println("El RUT debe tener 9 o 10 caracteres.");
+                            valido = false;
+                        }
+
+                        char ultimo = rut.charAt(rut.length() - 1);
+                        if (!Character.isDigit(ultimo) && Character.toUpperCase(ultimo) != 'K') {
+                            System.out.println("El último carácter debe ser un número o K.");
+                            valido = false;
+                        }
+
+                    } while (!valido);
+
                     System.out.print("Rol: ");
                     String rol = sc.nextLine();
 
@@ -74,4 +93,3 @@ public class Notieventos {
         } while (opcion != 0);
     }
 }
-
