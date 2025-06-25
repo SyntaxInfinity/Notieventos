@@ -106,3 +106,7 @@ imprimir credenciales con código QR.
 Este proyecto demuestra la aplicación práctica de patrones GoF en un sistema funcional, enfocado en modularidad, 
 reutilización y bajo acoplamiento. Cada patrón cumple un propósito real dentro del flujo de interacción del usuario, 
 permitiendo escalar o modificar el sistema sin romper su estructura base.
+
+### Ejemplo de ejecución en consola
+
+![imgmenuconsola](https://github.com/user-attachments/assets/981c39c3-9f03-4590-aac1-85a9d426bedd)
